@@ -363,3 +363,175 @@ System memory in use after: 144.4 MB.
 Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2104.
 Total: 4.898784 ms (FindLiveObjects: 0.164425 ms CreateObjectMapping: 0.051871 ms MarkObjects: 4.652013 ms  DeleteObjects: 0.029447 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006924 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.138 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1652 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144.4 MB.
+System memory in use after: 144.6 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2107.
+Total: 6.132322 ms (FindLiveObjects: 0.314850 ms CreateObjectMapping: 0.099159 ms MarkObjects: 5.671395 ms  DeleteObjects: 0.044221 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 499.855126 seconds.
+  path: Assets/Materials/Background-Back.mat
+  artifactKey: Guid(45950dc62071e4e388008c72e45a3c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Background-Back.mat using Guid(45950dc62071e4e388008c72e45a3c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7921c1046d081cf639407efd610a17ef') in 1.543159 seconds
+  Import took 1.547616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Materials/Background-Front.mat
+  artifactKey: Guid(989a481e4892442f8ad2e293aebbb0df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Background-Front.mat using Guid(989a481e4892442f8ad2e293aebbb0df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e870d802186b835348ae3e594777281b') in 0.018873 seconds
+  Import took 0.022098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Materials/Background-Middle.mat
+  artifactKey: Guid(c4fb50aaaa62a4d4e99b3b7baa656d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Background-Middle.mat using Guid(c4fb50aaaa62a4d4e99b3b7baa656d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3278e46e34fbd042b51669abef500041') in 0.014492 seconds
+  Import took 0.017994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Materials/Background-Front.mat
+  artifactKey: Guid(989a481e4892442f8ad2e293aebbb0df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Background-Front.mat using Guid(989a481e4892442f8ad2e293aebbb0df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e870d802186b835348ae3e594777281b') in 0.011913 seconds
+  Import took 0.014674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Materials/Background-Middle.mat
+  artifactKey: Guid(c4fb50aaaa62a4d4e99b3b7baa656d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Background-Middle.mat using Guid(c4fb50aaaa62a4d4e99b3b7baa656d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3278e46e34fbd042b51669abef500041') in 0.011922 seconds
+  Import took 0.014326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.098384 seconds.
+  path: Assets/Fonts/SAM_5C_27TRG_.TTF
+  artifactKey: Guid(5cf0eb48b4e374640bcc157a5f4a7284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/SAM_5C_27TRG_.TTF using Guid(5cf0eb48b4e374640bcc157a5f4a7284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e49a7d70767a6852b6391b64cc8269e3') in 2.069709 seconds
+  Import took 2.073739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.171420 seconds.
+  path: Assets/Sprites/Spaceship
+  artifactKey: Guid(b4578a23d05164819859df3cdfc4436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship using Guid(b4578a23d05164819859df3cdfc4436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0aad19b5764dec2d54fd8acd6be41b4') in 0.001856 seconds
+  Import took 0.005184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014710 seconds.
+  path: Assets/Sprites/Spaceship
+  artifactKey: Guid(b4578a23d05164819859df3cdfc4436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship using Guid(b4578a23d05164819859df3cdfc4436e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0aad19b5764dec2d54fd8acd6be41b4') in 0.001314 seconds
+  Import took 0.004109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023718 seconds.
+  path: Assets/Sprites/Spaceship/Spaceship.png
+  artifactKey: Guid(bf3bdd2147b394bc2b771f2556f0b49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship/Spaceship.png using Guid(bf3bdd2147b394bc2b771f2556f0b49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90d10935f1e798d880c421f2d3fc94cf') in 0.037976 seconds
+  Import took 0.041814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.097770 seconds.
+  path: Assets/Sprites/Spaceship/Spaceship.png
+  artifactKey: Guid(bf3bdd2147b394bc2b771f2556f0b49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship/Spaceship.png using Guid(bf3bdd2147b394bc2b771f2556f0b49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be29f980e7f50c8874f67c26d2c978e2') in 0.012254 seconds
+  Import took 0.016903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 164.722789 seconds.
+  path: Assets/Sprites/Spaceship/Spaceship.png
+  artifactKey: Guid(bf3bdd2147b394bc2b771f2556f0b49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship/Spaceship.png using Guid(bf3bdd2147b394bc2b771f2556f0b49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '970a5a61d2234053bb70836bacc28e60') in 0.108980 seconds
+  Import took 0.117466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.343612 seconds.
+  path: Assets/Sprites/Spaceship/Spaceship.png
+  artifactKey: Guid(bf3bdd2147b394bc2b771f2556f0b49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship/Spaceship.png using Guid(bf3bdd2147b394bc2b771f2556f0b49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '461a075ce3ef69cc709a17ade23568fd') in 0.102334 seconds
+  Import took 0.107129 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002501 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.184 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1652 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.4 MB.
+System memory in use after: 154.5 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2191.
+Total: 5.239315 ms (FindLiveObjects: 0.192065 ms CreateObjectMapping: 0.055527 ms MarkObjects: 4.958198 ms  DeleteObjects: 0.032209 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002077 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.074 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1652 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.6 MB.
+System memory in use after: 154.7 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2194.
+Total: 6.262259 ms (FindLiveObjects: 0.186391 ms CreateObjectMapping: 0.054265 ms MarkObjects: 5.994188 ms  DeleteObjects: 0.026218 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 359.784204 seconds.
+  path: Assets/Sprites/Spaceship/Spaceship.png
+  artifactKey: Guid(bf3bdd2147b394bc2b771f2556f0b49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship/Spaceship.png using Guid(bf3bdd2147b394bc2b771f2556f0b49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21f96d92f951c67c9c56f5a097a80686') in 0.161364 seconds
+  Import took 0.166000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.012672 seconds.
+  path: Assets/Sprites/Spaceship/Spaceship.png
+  artifactKey: Guid(bf3bdd2147b394bc2b771f2556f0b49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship/Spaceship.png using Guid(bf3bdd2147b394bc2b771f2556f0b49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd92d4d7d36bda99d4f409199d586458') in 0.102277 seconds
+  Import took 0.106496 seconds .
+
