@@ -31,6 +31,12 @@ public class PlayerShip : MonoBehaviour
     {
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
-        transform.position += new Vector3(x,y,0)*Time.deltaTime*4f;
+        Vector3 nextPosition = transform.position + new Vector3(x,y,0)*Time.deltaTime * 4f;
+        nextPosition = new Vector3(
+            Mathf.Clamp(nextPosition.x, -2.9f, 2.9f),
+            Mathf.Clamp(nextPosition.y, -1.9f, 1.9f),
+            nextPosition.z
+        );
+        transform.position = nextPosition;
     }
 }
