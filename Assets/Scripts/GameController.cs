@@ -13,9 +13,9 @@ public class GameController : MonoBehaviour
         scoreText.text = "SCORE:" + score;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddScore()
     {
-        
+        score += 100;
+        scoreText.text = "SCORE:" + score;
     }
 }
