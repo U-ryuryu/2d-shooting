@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyShip : MonoBehaviour
 {
+    public GameObject explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class EnemyShip : MonoBehaviour
     // isTriggerにチェックをつけた場合こちらが実行される。
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("ぶつかったよ");
+        Instantiate(explosion, transform.position, transform.rotation);
         Destroy(gameObject);
         Destroy(collision.gameObject);
     }
