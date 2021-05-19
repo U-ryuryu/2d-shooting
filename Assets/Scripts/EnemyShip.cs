@@ -17,6 +17,11 @@ public class EnemyShip : MonoBehaviour
     void Update()
     {
         transform.position -= new Vector3(0, Time.deltaTime, 0);
+
+        if (transform.position.y < -3)
+        {
+            Destroy(gameObject);
+        }
     }
 
     // isTriggerにチェックをつけた場合こちらが実行される。
