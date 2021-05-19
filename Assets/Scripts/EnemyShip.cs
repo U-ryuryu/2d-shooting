@@ -25,6 +25,7 @@ public class EnemyShip : MonoBehaviour
         if (collision.CompareTag("Player") == true)
         {
             Instantiate(explosion, collision.transform.position, transform.rotation);
+            gameController.GameOver();
         }
         else if (collision.CompareTag("Bullet") == true)
         {
