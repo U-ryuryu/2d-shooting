@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4588494999151167633}
   - component: {fileID: 4588494999151167632}
   - component: {fileID: 4588494999151167639}
+  - component: {fileID: 2175492678135025901}
   m_Layer: 0
   m_Name: PlayerBullet
   m_TagString: Untagged
@@ -96,4 +97,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b330b8c5814c472e9ebdbb9e280ba3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 0}
+--- !u!58 &2175492678135025901
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4588494999151167638}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.04}
+  serializedVersion: 2
+  m_Radius: 0.03
