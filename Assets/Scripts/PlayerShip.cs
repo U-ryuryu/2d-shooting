@@ -6,7 +6,14 @@ public class PlayerShip : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
-    // Update is called once per frame
+
+    AudioSource audioSource;
+    public AudioClip shotSE;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     void Update()
     {
         Shot();
@@ -17,6 +24,7 @@ public class PlayerShip : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(bulletPrefab, firePoint.position, transform.rotation);
+            audioSource.PlayOneShot(shotSE);
         }
     }
     void Move()
