@@ -7,16 +7,23 @@ public class EnemyShip : MonoBehaviour
     public GameObject explosion;
 
     GameController gameController;
+    float offset;
+
     // Start is called before the first frame update
     void Start()
     {
+        offset = Random.Range(0, 2f * Mathf.PI);
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position -= new Vector3(0, Time.deltaTime, 0);
+        transform.position -= new Vector3(
+            Mathf.Cos(Time.frameCount * 0.05f + offset) * 0.01f,
+            Time.deltaTime, 
+            0
+        );
 
         if (transform.position.y < -3)
         {
