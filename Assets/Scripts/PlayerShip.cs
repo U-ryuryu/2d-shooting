@@ -6,7 +6,14 @@ public class PlayerShip : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
-    // Update is called once per frame
+
+    AudioSource audioSource;
+    public AudioClip shotSE;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     void Update()
     {
         Shot();
@@ -17,12 +24,19 @@ public class PlayerShip : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(bulletPrefab, firePoint.position, transform.rotation);
+            audioSource.PlayOneShot(shotSE);
         }
     }
     void Move()
     {
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
-        transform.position += new Vector3(x,y,0)*Time.deltaTime*4f;
+        Vector3 nextPosition = transform.position + new Vector3(x,y,0)*Time.deltaTime * 4f;
+        nextPosition = new Vector3(
+            Mathf.Clamp(nextPosition.x, -2.9f, 2.9f),
+            Mathf.Clamp(nextPosition.y, -1.9f, 1.9f),
+            nextPosition.z
+        );
+        transform.position = nextPosition;
     }
 }
