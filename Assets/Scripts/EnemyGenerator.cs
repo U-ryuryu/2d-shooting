@@ -7,14 +7,9 @@ public class EnemyGenerator : MonoBehaviour
     public GameObject enemyPrefab;
     void Start()
     {
-        InvokeRepeating("Spawn", 2f, 0.5f);
+        // InvokeRepeating("Spawn", 2f, 0.5f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     void Spawn()
     {
         Vector3 spawnPosition = new Vector3(
