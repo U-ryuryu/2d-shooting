@@ -6,6 +6,8 @@ public class PlayerShip : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
+    public GameObject explosion;
+    GameController gameController;
 
     AudioSource audioSource;
     public AudioClip shotSE;
@@ -13,6 +15,7 @@ public class PlayerShip : MonoBehaviour
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
     }
     void Update()
     {
@@ -38,5 +41,16 @@ public class PlayerShip : MonoBehaviour
             nextPosition.z
         );
         transform.position = nextPosition;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("EnemyBullet") == true)
+        {
+            Instantiate(explosion, collision.transform.position, transform.rotation);
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+            gameController.GameOver();
+        }
     }
 }
