@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class EnemyGenerator : MonoBehaviour
 {
-    public GameObject enemyPrefab;
+    public GameObject EnemyPrefab;
+    public GameObject BossEnemyPrefab;
+
     void Start()
     {
-        // InvokeRepeating("Spawn", 2f, 0.5f);
+        InvokeRepeating("Spawn", 2f, 0.5f);
+        Invoke("BossSpawn", 4f);
     }
 
     void Spawn()
@@ -18,10 +21,19 @@ public class EnemyGenerator : MonoBehaviour
             transform.position.z
             );
         Instantiate(
-            enemyPrefab, 
+            EnemyPrefab, 
             spawnPosition, 
             transform.rotation
             );
     }
 
+    void BossSpawn()
+    {
+        Instantiate(
+            BossEnemyPrefab, 
+            transform.position, 
+            transform.rotation
+            );
+            CancelInvoke();
+    }
 }

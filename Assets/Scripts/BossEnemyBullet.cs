@@ -15,6 +15,12 @@ public class BossEnemyBullet : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(dx, dy, 0) * Time.deltaTime;
+
+        if (transform.position.x < -3 || transform.position.x > 3 ||
+            transform.position.y < -3 || transform.position.y > 3)
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

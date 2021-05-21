@@ -55,6 +55,10 @@ public class EnemyShip : MonoBehaviour
         {
             return;
         }
+        else if (collision.CompareTag("BossEnemy") == true)
+        {
+            return;
+        }
         
         Instantiate(explosion, transform.position, transform.rotation);
         Destroy(gameObject);
