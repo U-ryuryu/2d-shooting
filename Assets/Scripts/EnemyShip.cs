@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class EnemyShip : MonoBehaviour
 {
+    public Transform firePoint;
     public GameObject explosion;
+    public GameObject bulletPrefab;
 
     GameController gameController;
     float offset;
@@ -13,7 +15,13 @@ public class EnemyShip : MonoBehaviour
     void Start()
     {
         offset = Random.Range(0, 2f * Mathf.PI);
+        InvokeRepeating("Shot", 2f, 1f);
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
+    }
+
+    void Shot()
+    {
+        Instantiate(bulletPrefab, firePoint.position, transform.rotation);
     }
 
     // Update is called once per frame
@@ -43,6 +51,15 @@ public class EnemyShip : MonoBehaviour
         {
             gameController.AddScore();
         }
+        else if (collision.CompareTag("EnemyBullet") == true)
+        {
+            return;
+        }
+        else if (collision.CompareTag("BossEnemy") == true)
+        {
+            return;
+        }
+        
         Instantiate(explosion, transform.position, transform.rotation);
         Destroy(gameObject);
         Destroy(collision.gameObject);
