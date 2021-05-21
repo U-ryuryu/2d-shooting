@@ -9,6 +9,9 @@ public class PlayerShip : MonoBehaviour
     public GameObject explosion;
     GameController gameController;
 
+    public static float px = 0;
+    public static float py = 0;
+
     AudioSource audioSource;
     public AudioClip shotSE;
 
@@ -21,6 +24,9 @@ public class PlayerShip : MonoBehaviour
     {
         Shot();
         Move();
+
+        px = transform.position.x * 0.7f;
+        py = transform.position.y * 0.7f;
     }
     void Shot()
     {

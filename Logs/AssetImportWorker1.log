@@ -1787,3 +1787,59 @@ System memory in use after: 168.5 MB.
 Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2315.
 Total: 5.623434 ms (FindLiveObjects: 0.246401 ms CreateObjectMapping: 0.079155 ms MarkObjects: 5.236218 ms  DeleteObjects: 0.060320 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001949 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.308 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1661 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 168.6 MB.
+System memory in use after: 168.7 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2318.
+Total: 5.686537 ms (FindLiveObjects: 0.365520 ms CreateObjectMapping: 0.084245 ms MarkObjects: 5.186727 ms  DeleteObjects: 0.048658 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 13203.215860 seconds.
+  path: Assets/Prefabs/BossEnemyShip.prefab
+  artifactKey: Guid(b4b8b672c1c4a4fdb9d60f0fe4595be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BossEnemyShip.prefab using Guid(b4b8b672c1c4a4fdb9d60f0fe4595be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6adc6c3272a9ef1765ae57f863cc1e9a') in 0.087501 seconds
+  Import took 0.092424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.359815 seconds.
+  path: Assets/Prefabs/BossEnemyShip.prefab
+  artifactKey: Guid(b4b8b672c1c4a4fdb9d60f0fe4595be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BossEnemyShip.prefab using Guid(b4b8b672c1c4a4fdb9d60f0fe4595be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73be20f78bdcbb5f431ca41596d0fe42') in 0.043189 seconds
+  Import took 0.048478 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003514 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.145 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1661 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 168.9 MB.
+System memory in use after: 169.0 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2322.
+Total: 7.880884 ms (FindLiveObjects: 0.367511 ms CreateObjectMapping: 0.131121 ms MarkObjects: 7.348287 ms  DeleteObjects: 0.029431 ms)
+

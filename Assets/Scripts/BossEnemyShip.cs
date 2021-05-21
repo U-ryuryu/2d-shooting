@@ -6,12 +6,17 @@ public class BossEnemyShip : MonoBehaviour
 {
     public BossEnemyBullet bulletPrefab;
     public Transform firePoint;
+    public GameObject explosion;
+    GameController gameController;
     GameObject player;
+
+    int Hp = 10;
 
     void Start()
     {
         player = GameObject.Find("PlayerShip");
         StartCoroutine(CPU());
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
     }
 
     void Shot(float angle, float speed)
@@ -103,6 +108,29 @@ public class BossEnemyShip : MonoBehaviour
                 float angle = (i - bulletCount/2) * ((Mathf.PI / 2f) / bulletCount);
 
                 Shot(angleP + angle, speed);
+            }
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") == true)
+        {
+            Instantiate(explosion, collision.transform.position, transform.rotation);
+            Destroy(collision.gameObject);
+
+            gameController.GameOver();
+        }
+        else if (collision.CompareTag("Bullet") == true)
+        {
+            Hp --;
+
+            Destroy(collision.gameObject);
+
+            if (Hp <= 0)
+            {
+                Destroy(gameObject);
+                Instantiate(explosion, transform.position, transform.rotation);
             }
         }
 
