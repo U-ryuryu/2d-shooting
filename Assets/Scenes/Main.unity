@@ -410,6 +410,7 @@ GameObject:
   - component: {fileID: 809056932}
   - component: {fileID: 809056933}
   - component: {fileID: 809056934}
+  - component: {fileID: 809056935}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Player
@@ -517,6 +518,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 757136013}
   bulletPrefab: {fileID: 4588494999151167638, guid: 64d501ad3dc404b4898bbf028838e094,
+    type: 3}
+  explosion: {fileID: 7081477210234406800, guid: 0fcc8c0ae3c10442f8139737187e7367,
     type: 3}
   shotSE: {fileID: 8300000, guid: 1743f0d445b86480b8ecfdbc8c84a5f9, type: 3}
 --- !u!61 &809056933
@@ -641,6 +644,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!50 &809056935
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809056928}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &810866204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1338,7 +1362,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbe95733de6b54dc3a24604159e71612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1122888577279789366, guid: 0814b63b3912d4c5d8538d97c5c59289,
+  EnemyPrefab: {fileID: 1122888577279789366, guid: 0814b63b3912d4c5d8538d97c5c59289,
+    type: 3}
+  BossEnemyPrefab: {fileID: 7056670203206096793, guid: b4b8b672c1c4a4fdb9d60f0fe4595be5,
     type: 3}
 --- !u!4 &1874405010
 Transform:
@@ -1348,7 +1374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874405008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.5, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
