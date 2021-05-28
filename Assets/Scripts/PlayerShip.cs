@@ -19,21 +19,23 @@ public class PlayerShip : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
+        StartCoroutine(Shot());
     }
     void Update()
     {
-        Shot();
         Move();
 
         px = transform.position.x * 0.7f;
         py = transform.position.y * 0.7f;
     }
-    void Shot()
+
+    IEnumerator Shot()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        while(true)
         {
             Instantiate(bulletPrefab, firePoint.position, transform.rotation);
             audioSource.PlayOneShot(shotSE);
+            yield return new WaitForSeconds (0.2f);
         }
     }
     void Move()
